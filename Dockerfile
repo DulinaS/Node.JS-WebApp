@@ -1,7 +1,8 @@
 #Specify Base image
-From node:14-alpine
+FROM node:20-alpine
 
 #install dependencies
+COPY ./ ./
 RUN npm install
 
 #default command
